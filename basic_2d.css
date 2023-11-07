@@ -1,0 +1,44 @@
+body{
+    padding-top: 100px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.diamond{
+    position: relative;
+    background-color: rgb(255, 0, 157);
+    height: 80px;
+    width: 80px;
+    transform: rotate(45deg);
+}
+
+.circle-right{
+    position: absolute;
+    background-color: rgb(255, 0, 157);
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    transform: translateY(-40px);
+    transition: transform 0.7s;
+}
+.circle-right:hover{
+    background-color: rgb(255, 0, 157);
+    transform: translateY(-80px);
+}
+.circle-left:hover{
+    background-color: rgb(255, 0, 157);
+    transform: translateX(-80px);
+}
+.circle-left{
+    position: absolute;
+    background-color: rgb(255, 0, 157);
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    transform: translateX(-40px);
+    transition: transform 0.7s;
+}
